@@ -10,9 +10,9 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true
   },
-  // basePath: '/redesign/out',
-  // assetPrefix: '/redesign/out',
-  // output: 'export',
+  basePath: '/redesign/out',
+  assetPrefix: '/redesign/out',
+  output: 'export',
 };
 
 export default nextConfig;

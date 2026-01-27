@@ -6,6 +6,7 @@ import CommunicationHero from './components/CommunicationHero'
 import PBXPossibilities from './components/PBXPossibilities'
 import PricingStructure from './components/PricingStructure'
 import ContactSection from './components/ContactSection'
+import Reviews from './components/Reviews'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <PBXPossibilities />
       <PricingStructure />
       <Trusted />
+      <Reviews />
       <ContactSection />
       <CTA />
     </>
