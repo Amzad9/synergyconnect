@@ -78,9 +78,22 @@ const ContactSection = () => {
                       </div>
                       <div className="min-w-0">
                         <p className="text-xs sm:text-sm text-gray-600">Phone Number</p>
-                        <a href="tel:+15551234567" className="font-semibold text-gray-900 truncate hover:text-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500 rounded">
-                          +1 (555) 123-4567
+                        <a href="tel:+16093505800" className="font-semibold text-gray-900 truncate hover:text-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500 rounded">
+                          609-350-5800
                         </a>
+                        <span className="text-xs text-gray-500 ml-2">– main</span>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                        <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-600" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-xs sm:text-sm text-gray-600">Fax Number</p>
+                        <p className="font-semibold text-gray-900 truncate">
+                          866-567-9250
+                        </p>
                       </div>
                     </div>
                     
@@ -102,7 +115,8 @@ const ContactSection = () => {
                       </div>
                       <div className="min-w-0">
                         <p className="text-xs sm:text-sm text-gray-600">Office Location</p>
-                        <p className="font-semibold text-gray-900 truncate">123 Business Ave, Suite 100</p>
+                        <p className="font-semibold text-gray-900">Turnersville, NJ 08012</p>
+                        <p className="text-xs sm:text-sm text-gray-700">United States of America</p>
                       </div>
                     </div>
                   </address>
@@ -240,7 +254,8 @@ const ContactSection = () => {
               <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-600" />
             </div>
             <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Call Us Directly</h4>
-            <p className="text-xs sm:text-sm text-gray-600">Available 9AM-6PM EST</p>
+            <p className="text-xs sm:text-sm text-gray-600">Monday-Friday: 8am to 6pm</p>
+            <p className="text-xs sm:text-sm text-gray-600">Saturday: 9am to 1pm</p>
           </article>
           
           <article className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-4 sm:p-6 text-center">

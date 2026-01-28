@@ -63,7 +63,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-xl text-gray-900 leading-tight">Synergy </span>
-                <span className="text-xs text-teal-600 font-medium">Communications</span>
+                <span className="text-xs text-teal-600 font-medium">Connect</span>
               </div>
             </Link>
           </div>
