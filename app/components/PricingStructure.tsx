@@ -26,7 +26,7 @@ const PricingStructure = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] bg-emerald/15 rounded-full blur-3xl" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
         
         {/* Header Section - styled similar to Features heading */}
         <header className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">

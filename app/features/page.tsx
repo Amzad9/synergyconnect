@@ -82,7 +82,7 @@ export default function FeaturesPage() {
           <div className="absolute top-1/4 right-1/4 w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-cyan-500/20 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 left-1/4 w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-emerald-500/20 rounded-full blur-3xl" />
         </div>
-        <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-12 sm:pb-16 md:pb-20 lg:pb-24 flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 w-full container px-3 sm:px-3 lg:px-0 mx-auto pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-12 sm:pb-16 md:pb-20 lg:pb-24 flex flex-col items-center justify-center text-center">
           <h1
             id="features-heading"
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white px-2"
@@ -141,7 +141,7 @@ export default function FeaturesPage() {
               <div className="absolute top-0 right-0 w-[180px] h-[180px] sm:w-[280px] sm:h-[280px] bg-white/60 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
               <div className="absolute bottom-0 left-0 w-[180px] h-[180px] sm:w-[280px] sm:h-[280px] bg-white/60 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
             </div>
-            <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto max-w-7xl">
               <header className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-8 sm:mb-10 lg:mb-12">
                 <div
                   className={`shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center ${
@@ -187,7 +187,7 @@ export default function FeaturesPage() {
         aria-label="Get started"
       >
         <div className="absolute inset-0 bg-slate-900/20" aria-hidden="true" />
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3">
             Ready to put these features to work?
           </h2>

@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-tech-blue/15 rounded-full blur-3xl" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
         
         {/* Top Logo & Features Section */}
         <div className="py-16 border-b border-gray-800">

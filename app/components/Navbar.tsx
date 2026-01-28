@@ -53,7 +53,7 @@ const Navbar = () => {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container px-3 sm:px-3 lg:px-0 mx-auto">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center">
@@ -62,8 +62,8 @@ const Navbar = () => {
                 <span className="text-white font-bold text-xl">SC</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-xl text-gray-900 leading-tight">Synergy Connect</span>
-                <span className="text-xs text-teal-600 font-medium">Cloud Communications</span>
+                <span className="font-bold text-xl text-gray-900 leading-tight">Synergy </span>
+                <span className="text-xs text-teal-600 font-medium">Communications</span>
               </div>
             </Link>
           </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
               <div key={item.name} className="relative group">
                 <Link
                   href={item.href}
-                  className="px-4 py-2 text-gray-700 hover:text-teal-600 font-medium transition-all duration-300
+                  className="px-4 py-2 text-md text-gray-700 hover:text-teal-600 font-medium transition-all duration-300
                            hover:bg-linear-to-r hover:from-cyan-50 hover:to-teal-50 rounded-lg mx-1
                            flex items-center gap-1 focus:outline-none focus:ring-4 focus:ring-cyan-500/50"
                   aria-label={`Navigate to ${item.name}`}

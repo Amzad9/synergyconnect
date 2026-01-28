@@ -41,7 +41,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 md:pt-40 pb-24 sm:pb-32 flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 w-full container px-3 sm:px-3 lg:px-0 mx-auto pt-28 sm:pt-36 md:pt-40 pb-24 sm:pb-32 flex flex-col items-center justify-center text-center">
         <div className="max-w-7xl w-full flex flex-col items-center text-center">
       
 

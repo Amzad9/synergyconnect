@@ -30,7 +30,7 @@ export default function NotFound() {
           <div className="absolute top-1/4 right-1/4 w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-cyan-500/20 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 left-1/4 w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-emerald-500/20 rounded-full blur-3xl" />
         </div>
-        <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-12 sm:pb-16 md:pb-20 lg:pb-24 flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 w-full container px-3 sm:px-3 lg:px-0 mx-auto pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-12 sm:pb-16 md:pb-20 lg:pb-24 flex flex-col items-center justify-center text-center">
           <p className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-white/20 tracking-tighter select-none" aria-hidden="true">
             404
           </p>
@@ -56,7 +56,7 @@ export default function NotFound() {
           <div className="absolute bottom-0 left-0 w-[180px] h-[180px] sm:w-[280px] sm:h-[280px] bg-tech-blue/15 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-12">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
               Where would you like to go?

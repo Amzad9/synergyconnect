@@ -119,7 +119,7 @@ export default function SupportPage() {
           <div className="absolute bottom-1/3 left-1/4 w-48 h-48 sm:w-72 sm:h-72 bg-emerald-500/15 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-16 sm:pb-20 md:pb-24 flex flex-col items-center">
+        <div className="relative z-10 w-full container px-3 sm:px-3 lg:px-0 mx-auto pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-16 sm:pb-20 md:pb-24 flex flex-col items-center">
           <h1 id="support-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center mb-1">
             How can we help?
           </h1>
@@ -152,7 +152,7 @@ export default function SupportPage() {
           <div className="absolute bottom-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-aqua/10 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto max-w-6xl">
           <header className="text-center max-w-2xl mx-auto mb-12 sm:mb-16 lg:mb-20">
             <span className="inline-block px-4 py-2 bg-tech-blue/10 text-tech-blue font-semibold rounded-full border border-tech-blue/20 text-sm mb-4">
               Knowledge Base
@@ -212,7 +212,7 @@ export default function SupportPage() {
         aria-labelledby="need-support-heading"
       >
         <div className="absolute inset-0 bg-slate-900/10" aria-hidden="true" />
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto text-center">
           <h2 id="need-support-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3">
             Need Support?
           </h2>

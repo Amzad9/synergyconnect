@@ -78,7 +78,7 @@ export default function AboutPage() {
           <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-20 sm:pb-28 lg:pb-24 flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 w-full container px-3 sm:px-3 lg:px-0 mx-auto pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-20 sm:pb-28 lg:pb-24 flex flex-col items-center justify-center text-center">
           <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-cyan-300 text-sm font-medium mb-6">
             About Us
           </span>
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] bg-tech-blue/15 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
           <header className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 lg:mb-20">
             <span className="inline-block px-4 py-2 sm:px-5 sm:py-2.5 bg-linear-to-r from-tech-blue/10 to-aqua/10 text-gray-700 font-semibold rounded-full border border-tech-blue/20 mb-6 text-sm sm:text-base">
               Cloud PBX Advantages
@@ -159,7 +159,7 @@ export default function AboutPage() {
           <div className="absolute bottom-0 right-0 w-[225px] h-[225px] sm:w-[350px] sm:h-[350px] bg-aqua/20 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 lg:mb-20">
         <span className="inline-block px-4 py-2 sm:px-5 sm:py-2.5 bg-linear-to-r from-tech-blue/10 to-aqua/10 text-gray-700 font-semibold rounded-full border border-tech-blue/20 mb-4 text-sm sm:text-base">
                   Benefits

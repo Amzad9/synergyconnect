@@ -32,7 +32,7 @@ export default async function BlogPostPage({
           />
           <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/80 to-transparent" aria-hidden="true" />
         </div>
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10 md:pb-12">
+        <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto pb-8 sm:pb-10 md:pb-12">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-sm text-cyan-300 hover:text-white font-medium mb-4 transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900 rounded"
@@ -54,7 +54,7 @@ export default async function BlogPostPage({
 
       {/* Article */}
       <section className="relative py-12 sm:py-16 md:py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+        <div className="container px-3 sm:px-3 lg:px-0 mx-auto max-w-3xl">
           <div className="relative aspect-video w-full overflow-hidden rounded-2xl mb-8">
             <Image
               src={post.image}
