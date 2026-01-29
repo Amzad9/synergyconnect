@@ -100,11 +100,11 @@ const Footer = () => {
                   <div className="space-y-3">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-start gap-2">
                       <span className="text-gray-300 text-sm">Monday – Friday</span>
-                      <span className="text-cyan-400 font-medium text-sm ms-2">9am - 6pm</span>
+                      <span className="text-cyan-400 font-medium text-sm ms-2">8am to 6pm</span>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center justify-start gap-2">
                       <span className="text-gray-300 text-sm">Saturday</span>
-                      <span className="text-cyan-400 font-medium text-sm ms-2">9am - 12pm</span>
+                      <span className="text-cyan-400 font-medium text-sm ms-2">9am to 1pm</span>
                     </div>
                   </div>
                 </div>
@@ -158,7 +158,17 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Phone</p>
-                    <p className="font-medium">+1 (555) 123-4567</p>
+                    <p className="font-medium">609-350-5800</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 text-gray-300">
+                  <div className="w-10 h-10 bg-gradient-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-cyan-400" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400">Fax</p>
+                    <p className="font-medium">866-567-9250</p>
                   </div>
                 </div>
                 
@@ -178,7 +188,8 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Address</p>
-                    <p className="font-medium">123 Business Ave, Suite 100</p>
+                    <p className="font-medium">Turnersville, NJ 08012</p>
+                    <p className="text-sm text-gray-400 mt-1">United States of America</p>
                   </div>
                 </div>
               </div>

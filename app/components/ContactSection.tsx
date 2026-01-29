@@ -94,7 +94,7 @@ const ContactSection = () => {
                         <p className="font-semibold text-gray-900 truncate">
                           866-567-9250
                         </p>
-                      </div>
+                        </div>
                     </div>
                     
                     <div className="flex items-center gap-2 sm:gap-3">
