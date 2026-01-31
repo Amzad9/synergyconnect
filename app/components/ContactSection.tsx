@@ -1,9 +1,30 @@
+'use client'
 // components/ContactSection.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 import Image from 'next/image';
 
+const CONTACT_EMAIL = 'info@synergyconnect.org'
+const CONTACT_SUBJECT = 'Contact us'
+
 const ContactSection = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      '',
+      'Message:',
+      message,
+    ].join('\n')
+    const mailto = `mailto:${encodeURIComponent(CONTACT_EMAIL)}?subject=${encodeURIComponent(CONTACT_SUBJECT)}&body=${encodeURIComponent(body)}`
+    window.location.href = mailto
+  }
+
   return (
     <section 
       className="min-h-screen section-padding bg-tech-blue/10 relative overflow-hidden"
@@ -137,7 +158,7 @@ const ContactSection = () => {
                 <p className="text-sm sm:text-base text-gray-600">Fill out the form below and we'll get back to you within 24 hours</p>
               </div>
               
-              <form className="space-y-4 sm:space-y-6 flex-1 flex flex-col" aria-label="Contact form">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 flex-1 flex flex-col" aria-label="Contact form">
                 <div className="space-y-6 flex-1">
                   {/* Name Field */}
                   <div>
@@ -154,6 +175,8 @@ const ContactSection = () => {
                         type="text"
                         id="name"
                         name="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         required
                         className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition-all"
                         placeholder="Enter your full name"
@@ -175,31 +198,12 @@ const ContactSection = () => {
                         type="email"
                         id="email"
                         name="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         required
                         className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition-all"
                         placeholder="Enter your email address"
                         aria-required="true"
-                      />
-                    </div>
-                  </div>
-                  
-                  {/* Subject Field */}
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                      Subject
-                    </label>
-                    <div className="relative">
-                      <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" aria-hidden="true">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                        </svg>
-                      </div>
-                      <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition-all"
-                        placeholder="What is this regarding?"
                       />
                     </div>
                   </div>
@@ -218,15 +222,16 @@ const ContactSection = () => {
                       <textarea
                         id="message"
                         name="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         required
                         className="w-full h-full min-h-[120px] sm:min-h-[150px] pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition-all resize-none"
                         placeholder="Tell us about your communication needs..."
                         aria-required="true"
-                      ></textarea>
+                      />
                     </div>
                   </div>
                 </div>
-                
                 {/* Submit Button */}
                 <div className="pt-4">
                   <button

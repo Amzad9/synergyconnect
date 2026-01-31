@@ -7,7 +7,6 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 const featureLinks = [
   { name: 'AI Agent Receptionist', href: '/features/ai-agent-receptionist' },
   { name: 'VoIP Plans', href: '/features/voip-plans' },
-  { name: 'VoIP Phones', href: '/features/voip-phones' },
   { name: 'Call Queue Metrics', href: '/features/call-queue-metrics' },
   { name: 'SIP Trunking', href: '/features/sip-trunking' },
   { name: 'Audio Production', href: '/features/audio-production' },
@@ -36,14 +35,15 @@ const Navbar = () => {
     { name: 'About Us', href: '/about' },
     { name: 'Advantages', href: '/advantages' },
     { name: 'Features', href: '/features' },
-    { name: 'Phones', href: '/phones' },
     { name: 'Support', href: '/support' },
-    // { name: 'Blog', href: '/blog' },
     { name: 'Get Quote', href: '/quote' },
     { name: 'Contact Us', href: '/contact' },
   ]
 
   return (
+    <>
+
+   
     <nav 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled 
@@ -53,6 +53,9 @@ const Navbar = () => {
       role="navigation"
       aria-label="Main navigation"
     >
+     <div className="bg-amber-500 text-amber-950 text-center py-3 px-4 font-semibold text-sm sm:text-base shadow-md">
+        🚧 Currently under renovation — thank you for your patience!
+    </div>
       <div className="container px-3 sm:px-3 lg:px-0 mx-auto">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -253,6 +256,7 @@ const Navbar = () => {
       {/* Active indicator */}
       <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-cyan-500 via-teal-500 to-emerald-500 opacity-50"></div>
     </nav>
+    </>
   )
 }
 

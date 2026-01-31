@@ -43,8 +43,8 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 w-full container px-3 sm:px-3 lg:px-0 mx-auto pt-28 sm:pt-36 md:pt-40 pb-24 sm:pb-32 flex flex-col items-center justify-center text-center">
         <div className="max-w-7xl w-full flex flex-col items-center text-center">
-      
-
+          {/* Currently under renovation – main home page notice */}
+        
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-6xl md:text-6xl lg:text-7xl font-extrabold mb-10 leading-[1.1] tracking-tight">
             <span className="block text-white mb-3 drop-shadow-lg">

@@ -29,16 +29,16 @@ export default function GetQuotePage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Quote form submitted:', formData)
-    setFormData({
-      firstName: '',
-      lastName: '',
-      phone: '',
-      email: '',
-      bestTime: '',
-      hasVoIP: '',
-    })
-    alert('Thank you! We\'ll reach out with a quote soon.')
+    const body = [
+      `First Name: ${formData.firstName}`,
+      `Last Name: ${formData.lastName}`,
+      `Phone: ${formData.phone}`,
+      `Email: ${formData.email}`,
+      `Best time to call: ${formData.bestTime || 'Not specified'}`,
+      `Currently has VoIP/cloud system: ${formData.hasVoIP || 'Not specified'}`,
+    ].join('\n')
+    const mailto = `mailto:info@synergyconnect.org?subject=${encodeURIComponent('Get quote')}&body=${encodeURIComponent(body)}`
+    window.location.href = mailto
   }
 
   return (
