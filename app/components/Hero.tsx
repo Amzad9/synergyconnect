@@ -68,8 +68,6 @@ const Hero = () => {
             No Matter The Size Of Your Business, You Need A Fast And Reliable Communications System. Using A Cloud-Based Phone System Unifies Your Team And Enhances Customer Communications.
           </p>
 
-      
-
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Link

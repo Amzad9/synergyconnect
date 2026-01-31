@@ -15,10 +15,10 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const body = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      '',
-      'Message:',
+      // `Name: ${name}`,
+      // `Email: ${email}`,
+      // '',
+      // 'Message:',
       message,
     ].join('\n')
     const mailto = `mailto:${encodeURIComponent(CONTACT_EMAIL)}?subject=${encodeURIComponent(CONTACT_SUBJECT)}&body=${encodeURIComponent(body)}`

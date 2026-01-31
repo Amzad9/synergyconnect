@@ -19,10 +19,6 @@ export default function SupportPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const body = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      '',
-      'Message:',
       message,
     ].join('\n')
     window.location.href = buildMailto(SUPPORT_EMAIL, SUPPORT_SUBJECT, body)
