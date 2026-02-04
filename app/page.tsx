@@ -15,7 +15,7 @@ export default function Home() {
       <CommunicationHero />
       <Features />
       <PBXPossibilities />
-      <PricingStructure />
+      {/* <PricingStructure /> */}
       <Trusted />
       <Reviews />
       <ContactSection />

@@ -2,16 +2,17 @@ import Link from 'next/link'
 import { 
   Phone, Mail, MapPin, 
   Facebook, Twitter, Linkedin, Youtube,
+  Instagram,
   MessageSquare, FileText, Smartphone, DollarSign,
   Shield, Headphones, Cloud, Zap
 } from 'lucide-react'
 
 const Footer = () => {
   const socialIcons = [
-    { name: 'Facebook', icon: Facebook, color: 'hover:bg-blue-600 hover:border-blue-600' },
-    { name: 'Twitter', icon: Twitter, color: 'hover:bg-blue-400 hover:border-blue-400' },
-    { name: 'LinkedIn', icon: Linkedin, color: 'hover:bg-blue-700 hover:border-blue-700' },
-    { name: 'YouTube', icon: Youtube, color: 'hover:bg-red-600 hover:border-red-600' },
+    { name: 'Facebook', icon: Facebook, color: 'hover:bg-blue-600 hover:border-blue-600', url: 'https://www.facebook.com/profile.php?id=100078708703398#' },
+    { name: 'LinkedIn', icon: Linkedin, color: 'hover:bg-blue-700 hover:border-blue-700', url: 'https://www.linkedin.com/company/synergyconnect-org/' },
+    { name: 'YouTube', icon: Youtube, color: 'hover:bg-red-600 hover:border-red-600', url: 'https://www.youtube.com/channel/UChNhcZLOk0E9oReemmC9luA' },
+    { name: 'Instagram', icon: Instagram, color: 'hover:bg-pink-500 hover:border-pink-500', url: 'https://www.instagram.com/synergy_connect/' },
   ]
 
   const features = [
@@ -206,9 +207,12 @@ const Footer = () => {
                   {socialIcons.map((social) => {
                     const Icon = social.icon
                     return (
-                      <a 
+                      <a
                         key={social.name}
-                        href="#" 
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={social.name}
                         className={`w-10 h-10 border border-gray-700 rounded-lg flex items-center justify-center text-gray-400 ${social.color} transition-all duration-300`}
                       >
                         <Icon className="w-5 h-5" />
