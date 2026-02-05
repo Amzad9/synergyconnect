@@ -130,20 +130,23 @@ const Footer = () => {
                 PRACTICE AREAS
               </h3>
               
-              <div className="space-y-3">
+              <nav className="space-y-3" aria-label="Practice areas">
+                <Link href="/" className="group flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors">
+                  <span>Home</span>
+                </Link>
                 <Link href="/about" className="group flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors">
                   <span>About Us</span>
                 </Link>
-                
-                <Link href="/blog" className="group flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors">
-                  <span>Blog</span>
+                <Link href="/quote" className="group flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors">
+                  <span>Get a Quote</span>
                 </Link>
-                
-                <Link href="/phones" className="group flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors">
-                  <span>Phones</span>
+                <Link href="/contact" className="group flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors">
+                  <span>Contact</span>
                 </Link>
-              
-              </div>
+                <Link href="/support" className="group flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors">
+                  <span>Support</span>
+                </Link>
+              </nav>
             </div>
 
             {/* Contact Info */}
@@ -239,17 +242,14 @@ const Footer = () => {
             </div>
             
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
-              <Link href="/privacy" className="hover:text-cyan-400 transition-colors">
-                Privacy Policy
-              </Link>
-              <span className="text-gray-600">•</span>
-              <Link href="/terms" className="hover:text-cyan-400 transition-colors">
+            <Link href="/terms" className="hover:text-cyan-400 transition-colors">
                 Terms of Service
               </Link>
               <span className="text-gray-600">•</span>
-              <Link href="/cookies" className="hover:text-cyan-400 transition-colors">
-                Cookie Policy
+              <Link href="/privacy" className="hover:text-cyan-400 transition-colors">
+                Privacy Policy
               </Link>
+              
             </div>
           </div>
         </div>

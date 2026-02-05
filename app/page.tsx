@@ -17,7 +17,7 @@ export default function Home() {
       <PBXPossibilities />
       {/* <PricingStructure /> */}
       <Trusted />
-      <Reviews />
+      {/* <Reviews /> */}
       <ContactSection />
       <CTA />
     </>
