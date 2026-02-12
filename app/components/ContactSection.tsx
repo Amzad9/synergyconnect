@@ -1,5 +1,4 @@
 'use client'
-// components/ContactSection.tsx
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 import Image from 'next/image';
@@ -15,10 +14,6 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const body = [
-      // `Name: ${name}`,
-      // `Email: ${email}`,
-      // '',
-      // 'Message:',
       message,
     ].join('\n')
     const mailto = `mailto:${encodeURIComponent(CONTACT_EMAIL)}?subject=${encodeURIComponent(CONTACT_SUBJECT)}&body=${encodeURIComponent(body)}`
@@ -30,27 +25,20 @@ const ContactSection = () => {
       className="min-h-screen section-padding bg-tech-blue/10 relative overflow-hidden"
       aria-labelledby="contact-heading"
     >
-      {/* Blur circles - positioned in corners and middle */}
       <div className="absolute inset-0" aria-hidden="true">
-        {/* Top left corner */}
         <div className="absolute top-0 left-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] bg-tech-blue/20 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
         
-        {/* Top right corner */}
         <div className="absolute top-0 right-0 w-[225px] h-[225px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] bg-aqua/20 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
         
-        {/* Bottom left corner */}
         <div className="absolute bottom-0 left-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] bg-emerald/20 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
         
-        {/* Bottom right corner */}
         <div className="absolute bottom-0 right-0 w-[225px] h-[225px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] bg-aqua/20 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
         
-        {/* Middle center */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] bg-tech-blue/15 rounded-full blur-3xl" />
       </div>
   
       <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
         
-        {/* Header Section - styled similar to Features heading */}
         <header className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <span className="inline-block px-4 py-2 sm:px-5 sm:py-2.5 bg-linear-to-r from-tech-blue/10 to-aqua/10 text-gray-700 font-semibold rounded-full border border-tech-blue/20 mb-6 sm:mb-8 text-sm sm:text-base">
             We&apos;d Love to Hear From You
@@ -67,12 +55,9 @@ const ContactSection = () => {
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto items-stretch bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-100">
-          
-          {/* Left Column - Contact Image & Info */}
           <div className="relative flex flex-col h-full">
-            {/* Image Container */}
             <figure className="relative rounded-2xl overflow-hidden shadow-xl flex-1 min-h-[300px] sm:min-h-[400px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-teal-600/20 z-10" aria-hidden="true"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-cyan-500/20 to-teal-600/20 z-10" aria-hidden="true"></div>
               <div className="relative w-full h-full">
                 <Image 
                   src="https://images.unsplash.com/photo-1689799514696-b16af9b53753?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -84,7 +69,6 @@ const ContactSection = () => {
                 />
               </div>
               
-              {/* Overlay Info Cards */}
               <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 z-20">
                 <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg">
                   <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
@@ -124,8 +108,8 @@ const ContactSection = () => {
                       </div>
                       <div className="min-w-0">
                         <p className="text-xs sm:text-sm text-gray-600">Email Address</p>
-                        <a href="mailto:contact@synergyconnect.com" className="font-semibold text-gray-900 truncate hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded">
-                          contact@synergyconnect.com
+                        <a href="mailto:contact@synergyconnect.org" className="font-semibold text-gray-900 truncate hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded">
+                          contact@synergyconnect.org
                         </a>
                       </div>
                     </div>
@@ -146,8 +130,8 @@ const ContactSection = () => {
             </figure>
             
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-cyan-400 to-teal-300 rounded-full opacity-10 -z-10"></div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-tr from-teal-400 to-emerald-300 rounded-full opacity-10 -z-10"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-linear-to-br from-cyan-400 to-teal-300 rounded-full opacity-10 -z-10"></div>
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-linear-to-tr from-teal-400 to-emerald-300 rounded-full opacity-10 -z-10"></div>
           </div>
 
           {/* Right Column - Contact Form */}
@@ -236,7 +220,7 @@ const ContactSection = () => {
                 <div className="pt-4">
                   <button
                     type="submit"
-                    className="group relative w-full bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-semibold py-3 sm:py-4 px-6 rounded-xl hover:from-cyan-700 hover:to-teal-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-3 focus:outline-none focus:ring-4 focus:ring-cyan-500/50 focus:ring-offset-2"
+                    className="group relative w-full bg-linear-to-r from-cyan-600 to-teal-600 text-white font-semibold py-3 sm:py-4 px-6 rounded-xl hover:from-cyan-700 hover:to-teal-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-3 focus:outline-none focus:ring-4 focus:ring-cyan-500/50 focus:ring-offset-2"
                     aria-label="Submit contact form"
                   >
                     <Send className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
@@ -247,14 +231,14 @@ const ContactSection = () => {
             </div>
             
             {/* Form Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-cyan-400 to-teal-300 rounded-full opacity-10 -z-10"></div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-tr from-teal-400 to-emerald-300 rounded-full opacity-10 -z-10"></div>
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-linear-to-br from-cyan-400 to-teal-300 rounded-full opacity-10 -z-10"></div>
+            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-linear-to-tr from-teal-400 to-emerald-300 rounded-full opacity-10 -z-10"></div>
           </div>
         </div>
         
         {/* Bottom Info Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mt-12 sm:mt-16">
-          <article className="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl p-4 sm:p-6 text-center">
+          <article className="bg-linear-to-br from-cyan-50 to-cyan-100 rounded-xl p-4 sm:p-6 text-center">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-cyan-100 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4" aria-hidden="true">
               <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-600" />
             </div>
@@ -263,7 +247,7 @@ const ContactSection = () => {
             <p className="text-xs sm:text-sm text-gray-600">Saturday: 9am to 1pm</p>
           </article>
           
-          <article className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-4 sm:p-6 text-center">
+          <article className="bg-linear-to-br from-teal-50 to-teal-100 rounded-xl p-4 sm:p-6 text-center">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4" aria-hidden="true">
               <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-teal-600" />
             </div>
@@ -271,7 +255,7 @@ const ContactSection = () => {
             <p className="text-xs sm:text-sm text-gray-600">Response within 24 hours</p>
           </article>
           
-          <article className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-4 sm:p-6 text-center">
+          <article className="bg-linear-to-br from-emerald-50 to-emerald-100 rounded-xl p-4 sm:p-6 text-center">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4" aria-hidden="true">
               <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" />
             </div>

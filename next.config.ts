@@ -1,6 +1,27 @@
+// import type { NextConfig } from "next";
+
+// const nextConfig: NextConfig = {
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: 'https',
+//         hostname: 'images.unsplash.com',
+//       },
+//     ],
+//     unoptimized: true
+//   },
+//   basePath: '/redesign/out',
+//   assetPrefix: '/redesign/out',
+//   output: 'export',
+// };
+
+// export default nextConfig;
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: 'export',
+
   images: {
     remotePatterns: [
       {
@@ -8,11 +29,11 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
-    unoptimized: true
+    unoptimized: true,
   },
-  basePath: '/redesign/out',
-  assetPrefix: '/redesign/out',
-  output: 'export',
+
+  trailingSlash: true
 };
 
 export default nextConfig;
+

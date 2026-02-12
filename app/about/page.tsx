@@ -233,7 +233,7 @@ export default function AboutPage() {
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <div className="absolute inset-0 bg-linear-to-br from-aqua/10 to-emerald/5 z-10" aria-hidden="true" />
                   <Image
-                    src="/redesign/out/images/img.webp"
+                    src="/images/img.webp"
                     alt="Cloud hosted phone system - modern business communications"
                     width={800}
                     height={600}

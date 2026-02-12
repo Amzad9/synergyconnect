@@ -36,7 +36,7 @@ const PBXPossibilities = () => {
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <div className="absolute inset-0 bg-linear-to-br from-aqua/10 to-emerald/5 z-10" aria-hidden="true"></div>
                 <Image 
-                  src='/redesign/out/images/img1.jpeg' 
+                  src='/images/img1.jpeg' 
                   height={600} 
                   width={800} 
                   className="w-full h-auto object-cover aspect-square sm:aspect-4/4"

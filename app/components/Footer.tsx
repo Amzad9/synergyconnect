@@ -24,54 +24,46 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-gray-900 text-white overflow-hidden">
-      {/* Blur circles - positioned in corners and middle */}
       <div className="absolute inset-0">
-        {/* Top left corner */}
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-tech-blue/20 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
         
-        {/* Top right corner */}
         <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-aqua/20 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
         
-        {/* Bottom left corner */}
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald/20 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
         
-        {/* Bottom right corner */}
         <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-aqua/20 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
         
-        {/* Middle center */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-tech-blue/15 rounded-full blur-3xl" />
       </div>
       
       <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
         
-        {/* Top Logo & Features Section */}
         <div className="py-16 border-b border-gray-800">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-12">
-            {/* Logo & Tagline */}
             <div className="text-center lg:text-left">
               <Link href="/" className="inline-flex flex-col items-center lg:items-start gap-4 group">
-                <div className="flex items-center gap-3">
-                  <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                    <span className="text-white font-bold text-2xl">SC</span>
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-2xl text-gray-100">Synergy Connect</span>
-                    <span className="text-sm text-cyan-400 font-medium">Cloud Communication Solutions</span>
-                  </div>
-                </div>
+              <Link href="/" className="flex items-center space-x-3 group">
+              <img
+                src="/logo.png"
+                height={20}
+                width={200}
+                className="w-full h-auto"
+                alt="Synergy Connect Logo"
+                loading="eager"
+              />
+            </Link>
               </Link>
               <p className="text-gray-400 mt-4 max-w-md">
                 Transforming business communications with innovative cloud solutions that drive growth and efficiency.
               </p>
             </div>
 
-            {/* Feature Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {features.map((feature, index) => {
                 const Icon = feature.icon
                 return (
                   <div key={index} className="text-center p-4 bg-gray-800/50 rounded-xl hover:bg-gray-800/80 transition-colors">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-teal-500/20 rounded-full mb-3">
+                    <div className="inline-flex items-center justify-center w-12 h-12 bg-linear-to-br from-cyan-500/20 to-teal-500/20 rounded-full mb-3">
                       <Icon className="w-6 h-6 text-cyan-400" />
                     </div>
                     <h4 className="font-semibold text-gray-100 mb-1">{feature.title}</h4>
@@ -157,7 +149,7 @@ const Footer = () => {
               
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-gray-300">
-                  <div className="w-10 h-10 bg-gradient-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-linear-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
                     <Phone className="w-5 h-5 text-cyan-400" />
                   </div>
                   <div>
@@ -167,7 +159,7 @@ const Footer = () => {
                 </div>
                 
                 <div className="flex items-center gap-3 text-gray-300">
-                  <div className="w-10 h-10 bg-gradient-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-linear-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
                     <Phone className="w-5 h-5 text-cyan-400" />
                   </div>
                   <div>
@@ -177,17 +169,17 @@ const Footer = () => {
                 </div>
                 
                 <div className="flex items-center gap-3 text-gray-300">
-                  <div className="w-10 h-10 bg-gradient-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-linear-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
                     <Mail className="w-5 h-5 text-cyan-400" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Email</p>
-                    <p className="font-medium">contact@synergyconnect.com</p>
+                    <p className="font-medium">contact@synergyconnect.org</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-3 text-gray-300">
-                  <div className="w-10 h-10 bg-gradient-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-linear-to-br from-cyan-500/20 to-cyan-500/10 rounded-lg flex items-center justify-center">
                     <MapPin className="w-5 h-5 text-cyan-400" />
                   </div>
                   <div>

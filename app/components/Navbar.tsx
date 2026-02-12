@@ -38,6 +38,7 @@ const Navbar = () => {
     { name: 'Support', href: '/support' },
     { name: 'Get Quote', href: '/quote' },
     { name: 'Contact Us', href: '/contact' },
+    { name: 'Login', href: 'https://pbx.synergyconnect.org/', target: '_blank' },
   ]
 
   return (
@@ -53,21 +54,19 @@ const Navbar = () => {
       role="navigation"
       aria-label="Main navigation"
     >
-     <div className="bg-amber-500 text-amber-950 text-center py-3 px-4 font-semibold text-sm sm:text-base shadow-md">
-        🚧 Currently under renovation — thank you for your patience!
-    </div>
       <div className="container px-3 sm:px-3 lg:px-0 mx-auto">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="w-12 h-12 bg-linear-to-br from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                <span className="text-white font-bold text-xl">SC</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-xl text-gray-900 leading-tight">Synergy </span>
-                <span className="text-xs text-teal-600 font-medium">Connect</span>
-              </div>
+              <img
+                src="/logo.png"
+                height={50}
+                width={100}
+                className="w-full h-auto"
+                alt="Synergy Connect Logo"
+                loading="eager"
+              />
             </Link>
           </div>
 
@@ -77,7 +76,8 @@ const Navbar = () => {
               <div key={item.name} className="relative group">
                 <Link
                   href={item.href}
-                  className="px-4 py-2 text-md text-gray-700 hover:text-teal-600 font-medium transition-all duration-300
+                  target={item.target}
+                  className="px-2 lg:px-2 py-2 text-md lg:text-md text-gray-700 hover:text-teal-600 font-medium transition-all duration-300
                            hover:bg-linear-to-r hover:from-cyan-50 hover:to-teal-50 rounded-lg mx-1
                            flex items-center gap-1 focus:outline-none focus:ring-4 focus:ring-cyan-500/50"
                   aria-label={`Navigate to ${item.name}`}
@@ -203,7 +203,7 @@ const Navbar = () => {
                       <div className="pl-4 pt-1 pb-2 space-y-1">
                         <Link
                           href="/features"
-                          className="flex items-center px-4 py-2.5 min-h-[44px] text-white/90 hover:text-white hover:bg-white/20 rounded-lg text-sm font-medium transition-all"
+                          className="flex items-center px-2 lg:px-4 py-2.5 min-h-[44px] text-white/90 hover:text-white hover:bg-white/20 rounded-lg text-sm font-medium transition-all"
                           onClick={() => setIsOpen(false)}
                         >
                           All Features
@@ -212,7 +212,7 @@ const Navbar = () => {
                           <Link
                             key={f.href}
                             href={f.href}
-                            className="flex items-center px-4 py-2.5 min-h-[44px] text-white/90 hover:text-white hover:bg-white/20 rounded-lg text-sm font-medium transition-all"
+                            className="flex items-center px-2 lg:px-4 py-2.5 min-h-[44px] text-white/90 hover:text-white hover:bg-white/20 rounded-lg text-sm font-medium transition-all"
                             onClick={() => setIsOpen(false)}
                           >
                             {f.name}
@@ -225,6 +225,7 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     href={item.href}
+                    target={item.target}
                     className="flex items-center px-4 py-3 min-h-[44px] text-white hover:text-white hover:bg-white/20 active:bg-white/25
                              rounded-lg font-medium transition-all focus:outline-none focus:ring-4 focus:ring-white/50 backdrop-blur-sm"
                     onClick={() => setIsOpen(false)}
