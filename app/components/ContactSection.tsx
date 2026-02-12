@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 import Image from 'next/image';
 
-const CONTACT_EMAIL = 'info@synergyconnect.org'
+const CONTACT_EMAIL = 'contact@synergyconnect.org'
 const CONTACT_SUBJECT = 'Contact us'
 
 const ContactSection = () => {
