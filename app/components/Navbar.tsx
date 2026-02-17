@@ -10,7 +10,10 @@ const featureLinks = [
   { name: 'Call Queue Metrics', href: '/features/call-queue-metrics' },
   { name: 'SIP Trunking', href: '/features/sip-trunking' },
   { name: 'Audio Production', href: '/features/audio-production' },
-  { name: 'Business Text Messaging', href: '/features/business-text-messaging' },
+  { name: 'Business Cloud SMS', href: '/business-cloud-sms' },
+  { name: 'The Power of AI', href: '/power-of-ai' },
+  { name: 'OmniResponse', href: '/omni-response' },
+  { name: 'Connect UC', href: '/connect-uc' },
 ]
 
 const Navbar = () => {
@@ -61,9 +64,9 @@ const Navbar = () => {
             <Link href="/" className="flex items-center space-x-3 group">
               <img
                 src="/logo.png"
-                height={50}
-                width={100}
-                className="w-full h-auto"
+                height={40}
+                width={220}
+                className=""
                 alt="Synergy Connect Logo"
                 loading="eager"
               />

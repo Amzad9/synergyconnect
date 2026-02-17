@@ -91,6 +91,51 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* About Content Section - Exact content from image */}
+      <section className="relative section-padding bg-white overflow-hidden">
+        <div className="absolute inset-0" aria-hidden="true">
+        <div className="absolute top-0 right-0 w-[225px] h-[225px] sm:w-[350px] sm:h-[350px] bg-aqua/20 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
+          <div className="absolute top-0 right-0 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-tech-blue/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
+          <div className="absolute bottom-0 left-0 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-emerald/5 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
+        </div>
+
+        <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none">
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Founded in 1999, Synergy Connect has been delivering trusted managed IT services to businesses throughout New Jersey, Pennsylvania, and Delaware for more than 25 years.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-6">
+                In the past eight years, we expanded our portfolio to include a fully comprehensive unified communications platform powered by enterprise-grade VoIP. Today, we proudly serve local tri-state clients and national accounts across the country with reliable phone systems, cloud telephony, and integrated collaboration tools.
+              </p>
+
+              <p className="text-gray-900 font-semibold mb-2">
+                Our guiding principle has never changed:
+              </p>
+
+              <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li>Outstanding products</li>
+                <li>Exceptional, personalized service</li>
+                <li>Putting customers first</li>
+              </ul>
+
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Customer satisfaction isn't just our promise — it's our guarantee. Every client—whether local or nationwide—receives dedicated support, clear communication, and a true partnership built to help their business thrive.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-8">
+                We're proud of the long-term relationships we've earned and the growth we've supported. Ready to experience the difference?
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                Contact us today to do a free telecom audit or managed services assessment — we're here to make technology work for you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose - Feature cards (same pattern as home Features) */}
       <section
         id="why-choose"
