@@ -5,11 +5,6 @@ import Link from 'next/link'
 import { Menu, X, ChevronDown } from 'lucide-react'
 
 const featureLinks = [
-  { name: 'AI Agent Receptionist', href: '/features/ai-agent-receptionist' },
-  { name: 'VoIP Plans', href: '/features/voip-plans' },
-  { name: 'Call Queue Metrics', href: '/features/call-queue-metrics' },
-  { name: 'SIP Trunking', href: '/features/sip-trunking' },
-  { name: 'Audio Production', href: '/features/audio-production' },
   { name: 'Business Cloud SMS', href: '/business-cloud-sms' },
   { name: 'The Power of AI', href: '/power-of-ai' },
   { name: 'OmniResponse', href: '/omni-response' },
