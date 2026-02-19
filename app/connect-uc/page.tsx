@@ -42,14 +42,12 @@ import {
 } from 'lucide-react'
 
 export default function UCClientPage() {
-  // Employee status data from image 1
   const employeeStatus = [
     { name: "Patrick Meehan", status: "On a Call", icon: PhoneCall, color: "text-blue-600", bgColor: "bg-blue-100" },
     { name: "Mary Smith", status: "Available", icon: User, color: "text-emerald-600", bgColor: "bg-emerald-100" },
     { name: "John Berry", status: "Do Not Disturb - Lunch Break", icon: UserMinus, color: "text-red-600", bgColor: "bg-red-100" },
   ]
 
-  // Questions from image 1
   const questions = [
     "Have a staff of remote or hybrid workers who need to stay connected?",
     "Want to replace your desk phones without losing features?",
@@ -58,15 +56,12 @@ export default function UCClientPage() {
 
   return (
     <>
-      {/* Hero Section */}
       <section
         className="relative min-h-[50vh] flex flex-col items-center justify-center overflow-hidden bg-slate-900"
-        aria-label="UC Client - ConnectUC"
+        aria-label="UUC Client/ConnectUC"
       >
-        {/* Background gradient */}
         <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-purple-900 to-blue-900" aria-hidden="true" />
 
-        {/* Background image */}
         <div className="absolute inset-0" aria-hidden="true">
           <Image
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
@@ -76,7 +71,6 @@ export default function UCClientPage() {
             priority
             sizes="100vw"
           />
-          {/* Dark overlay */}
           <div className="absolute inset-0 bg-linear-to-br from-slate-900/85 via-purple-900/75 to-blue-900/85" aria-hidden="true" />
         </div>
 
@@ -91,7 +85,7 @@ export default function UCClientPage() {
             Unified Communications Client
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
-            UC Client / ConnectUC
+            UC Client/ConnectUC
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl px-2 sm:px-0">
             Stay connected with your customers wherever you are
@@ -99,7 +93,6 @@ export default function UCClientPage() {
         </div>
       </section>
 
-      {/* Overview Section with Employee Status */}
       <section className="relative section-padding bg-white overflow-hidden">
         <div className="absolute inset-0" aria-hidden="true">
           <div className="absolute top-0 right-0 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-purple-500/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
@@ -108,7 +101,6 @@ export default function UCClientPage() {
 
         <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Content */}
             <div>
               <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full mb-4">
                 Anywhere Communications
@@ -122,7 +114,7 @@ export default function UCClientPage() {
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                Our full-featured AI-powered UC Client is available for mobile, web, and desktop. It is tightly integrated with our UCaaS platform to provide all the business communications features that your team needs to work whenever they need to and wherever they are.
+                Our full-featured AI-powered UC Client/ConnectUC is available for mobile, web, and desktop. It is tightly integrated with our UCaaS platform to provide all the business communications features that your team needs to work whenever they need to and wherever they are.
               </p>
             </div>
 
@@ -155,7 +147,6 @@ export default function UCClientPage() {
         </div>
       </section>
 
-      {/* Key Features - Clients Section */}
       <section className="relative section-padding bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div className="absolute inset-0" aria-hidden="true">
           <div className="absolute top-0 left-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] bg-purple-500/20 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
@@ -172,7 +163,6 @@ export default function UCClientPage() {
             </h2>
           </div>
 
-          {/* Clients */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <Globe className="w-6 h-6 text-purple-600" />
@@ -194,7 +184,6 @@ export default function UCClientPage() {
             </div>
           </div>
 
-          {/* Voice Calls */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <Phone className="w-6 h-6 text-blue-600" />
@@ -228,7 +217,6 @@ export default function UCClientPage() {
             </ul>
           </div>
 
-          {/* Contact Management */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <Users className="w-6 h-6 text-emerald-600" />
@@ -246,7 +234,6 @@ export default function UCClientPage() {
             </ul>
           </div>
 
-          {/* Collaboration */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <Video className="w-6 h-6 text-purple-600" />
@@ -272,7 +259,6 @@ export default function UCClientPage() {
             </ul>
           </div>
 
-          {/* Virtual Fax */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6 text-orange-600" />
@@ -298,7 +284,6 @@ export default function UCClientPage() {
             </ul>
           </div>
 
-          {/* AI-Powered Features */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <Brain className="w-6 h-6 text-indigo-600" />
@@ -322,7 +307,6 @@ export default function UCClientPage() {
         </div>
       </section>
 
-      {/* Assessment Section */}
       <section className="relative section-padding bg-white overflow-hidden">
         <div className="absolute inset-0" aria-hidden="true">
           <div className="absolute top-0 right-0 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-purple-500/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
@@ -332,7 +316,7 @@ export default function UCClientPage() {
         <div className="relative z-10 container px-3 sm:px-3 lg:px-0 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Not sure if you need a UC Client?
+              Not sure if you need a UC Client/ConnectUC?
             </h2>
             
             <p className="text-lg text-gray-600 mb-6">
@@ -352,14 +336,13 @@ export default function UCClientPage() {
               </ul>
               
               <p className="text-lg text-gray-800 font-semibold mt-6 text-center">
-                If any of these sounds familiar, your business can benefit from our UC client.
+                If any of these sounds familiar, your business can benefit from our UC Client/ConnectUC.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section with Contact Info */}
       <section className="relative section-padding bg-linear-to-br from-purple-900 via-blue-900 to-slate-900 overflow-hidden">
         <div className="absolute inset-0" aria-hidden="true">
           <Image
@@ -402,7 +385,7 @@ export default function UCClientPage() {
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-purple-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200 group text-lg"
             >
-              Get Started with UC Client
+              Get Started with UC Client/ConnectUC
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

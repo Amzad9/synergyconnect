@@ -8,7 +8,7 @@ const featureLinks = [
   { name: 'Business Cloud SMS', href: '/business-cloud-sms' },
   { name: 'The Power of AI', href: '/power-of-ai' },
   { name: 'OmniResponse', href: '/omni-response' },
-  { name: 'Connect UC', href: '/connect-uc' },
+  { name: 'UC Client/ConnectUC', href: '/connect-uc' },
 ]
 
 const Navbar = () => {
@@ -58,9 +58,9 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3 group">
               <img
-                src="/logo.png"
+                src="/logo2.png"
                 height={40}
-                width={220}
+                width={160}
                 className=""
                 alt="Synergy Connect Logo"
                 loading="eager"

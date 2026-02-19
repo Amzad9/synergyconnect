@@ -44,10 +44,10 @@ const Footer = () => {
               <Link href="/" className="inline-flex flex-col items-center lg:items-start gap-4 group">
               <Link href="/" className="flex items-center space-x-3 group">
               <img
-                src="/logo.png"
+                src="/logo2.png"
                 height={20}
-                width={200}
-                className="w-full h-auto"
+                width={170}
+                className=""
                 alt="Synergy Connect Logo"
                 loading="eager"
               />
