@@ -294,7 +294,7 @@ export default function OmniResponsePage() {
           loop
           playsInline
         >
-          <source src="/videos/OmniResponse Video.mp4" type="video/mp4" />
+          <source src="/OmniResponse Video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
